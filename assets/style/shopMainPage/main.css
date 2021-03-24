@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{   
+    width: 100%;
+    height: 2800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #DBDBDB;   
+}
+
+
+.fontSizzeBtnArea{
+    position: relative;
+    width: 1206px;
+    margin-top: 200px;
+}
+
+.fontSizeButtons{
+    opacity: .5;
+    top: 75vh;
+    left: 4vw;
+    width: 40px;
+    height: 160px;
+    position: fixed;
+    z-index: 600;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    transition: 0.5s;
+}
+
+.fontSizeButtons:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+.fontSizeButtons img{
+    z-index: 1;
+    top:14px;
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    
+}
+.fontBtn{
+    z-index: 2;
+    padding: 7px 13px;
+    background: white;
+    color: #707070;
+    border-radius: 50%;
+    left: 0px;
+    font-size: 24px;
+}
+.BtnDecrease{
+    padding: 7px 16px;
+}
+
+.BtnIncrease:hover{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    color: #F63F17;
+    font-size: 26px;
+    transition: 0.2s;
+    padding: 6px 13px;
+}
+.BtnDecrease:hover{
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    color: #F63F17;
+    font-size: 26px;
+    padding: 6px 16px;
+    transition: 0.2s;
+}
+
+.BtnIncrease:active,.BtnDecrease:active{
+    background: #d4d4d4;
+    font-size: 24px;
+}
+
+
+.fontBtnIncrease{
+    
+    z-index: 2;
+    position: absolute;
+}
+.fontBtnDecrease{
+    top: 120px;
+    z-index: 3;
+    position: absolute;
+}
+
+.mainImage,.shadeImage{
+    width: 1920px;
+    
+}
+.mainImage{
+    height: 100%;
+}
+.shadeImage{
+    height: 2652px;
+}
+
+.main_backgroundImage{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 0; 
+}
+
+.main_shade{
+    
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 0; 
+
+}
+
+
+
+
+/* --------------------------------NavBar----------------------------------------------- */
+
+.navSecTopImage{
+    position: relative;
+    width: 1206px;
+    margin-top: 200px;
+}
+
+.shopCoverPic0{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+
+}
+.shopCoverPic{
+    top: 70px;
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+}
+
+.shopCoverPic0 img{
+    width: 1130px;
+    
+}
+.shopCoverPic img{
+    width: 1306px;
+    
+}
+
+.alignCenter{
+    width: 1206px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+.shopNavbar{   
+    top:-1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 590px;  
+    position: sticky;
+    z-index: 3; 
+    width: 1206px;
+    height: 100px;
+    background-image: linear-gradient(to bottom right,#F63F17,#B22607);
+    border: 1.5px solid #F63F17;
+    transition: 0.3s;
+    
+}
+
+
+.navLogo{
+    height: 60px;
+    transition: 0.3s;
+}
+
+.nav_centerName{
+    margin: 0 380px 0 380px;
+    font-family: Oswald;
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.newWindowBtn{
+    transition: 0.3s;
+    outline: transparent;
+    border: transparent;
+    background-color: transparent;
+    position: relative;
+    width: 50px;
+    height: 32px;
+    margin-left:10px;
+    box-sizing: border-box;
+}
+
+.favorite_Hub img{
+    margin-top: 4px;
+    height: 28px;
+    margin-left: 16px;
+}
+
+.shopping_Hub img{
+    
+    height: 32px;
+    margin-left: 16px;
+}
+
+
+.favNumber,.shopNumber{
+
+    top: 5px;
+    
+    position: absolute;
+    z-index: 3;
+    border-radius: 50%;
+    padding:0 9px;
+    background: white;
+    font-family: Oswald;
+    font-size: 18px;
+    color: #F63F17;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+
+.nav-long{
+    width: 100%;
+    height: 60px;
+    transition: 0.6s;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.nav-long .navLogo{
+    height: 40px;
+    margin-left:0px;
+    transition: 0.5s;
+}
+
+.nav-long .nav_centerName{
+    color: transparent;
+    transform: scale(0);
+    transition: 0.5s;
+    margin: 0 440px 0 440px;
+}
+
+.nav-long .newWindowBtn{
+    margin-left:20px;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.nav-long .newWindowBtn img{
+    margin-left:16px;
+}
+
+
+/* -----------------------------------Main content------------------------------ */
+#productBuyingBox_create{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.mainContents{
+    width: 1206px;
+    position: absolute;
+    z-index: 3; 
+    margin-top: 1000px;
+}
+
+.product_list01,.product_list02,.product_list03{
+    display: flex;
+    flex-direction: row;
+}
+
+.product_list02,.product_list03{
+    margin-top: 50px;
+}
+
+.card_01,
+.card_02,
+.card_03,
+.card_04,
+.card_05,
+.card_06,
+.card_07,
+.card_08,
+.card_09,
+.card_10,
+.card_11,
+.card_12,
+.card_13,
+.card_14,
+.card_15,
+.card_16,
+.card_17,
+.card_18,
+.card_19,
+.card_20
+{
+    margin-right:32px;
+}
+
+.list01_heading{
+    text-align: center;
+    font-family: Righteous;
+    font-size: 32px;
+    color: #EAE8E8;
+    margin-bottom: 50px;
+}
+
+
+.list02_heading{
+    margin-top: 80px;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 32px;
+    color: #26252F;
+    margin-bottom: 50px;
+}
+
+.footerLogeSet_img{
+    margin-top: 150px;
+    width: 1206px;
+    margin-bottom: 100px;
+}

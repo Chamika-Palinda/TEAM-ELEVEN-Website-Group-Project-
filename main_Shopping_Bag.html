@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team 11 Officaial Shop</title>
+        
+        <script src="scripts/productCard_creater.js"></script>
+        <script src="scripts/productBuyingBox_creater.js"></script>
+        <script src="scripts/addToBag.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="assets/style/shopMainPage/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/productBuyingBox/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/productCard/Test_block.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/shoppingBag/style2.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/main_navBar/main_shop_navbar.css">
+   
+    </head>
+    
+    <body >
+
+        <!-- Background Imges -->
+        <div class="main_backgroundImage" >
+            <img src="assets/style/shopMainPage/Mask Group 1@2x.png" alt="background" class="mainImage">
+        </div>
+
+        <div class="main_shade">
+            <img src="assets/style/shopMainPage/Rectangle 39@2x.png" alt="backgroundShade" class="shadeImage">
+        </div>
+
+
+        <!-- Main navigation bar -->
+        <div class="navBar_Main_background">
+            <img class="navBar_Main_img"src="assets/style/main_navBar/shop__NavBar@2x.png" alt="navBar">
+        </div>
+    
+        <div class="navBar_Main">       
+              <div class="main_TopNavbarMenu">
+                <a href="Main_page.html"><span class="rotate path_news">HOME</span></a>
+                <a href="blog_page.html"><span class="rotate path_blogs">BLOGS</span></a>
+                <a href="#"><span class="rotate path_shop">SHOP</span></a>
+                <a href="gallery_Page.html"><span class="rotate path_gallery">GALLERY</span></a>
+                <a href="about us.html"><span class="rotate path_about_us">ABOUT</span></a>
+            </div> 
+        </div> 
+
+
+
+        <!-- Images top on to the Shop Navigation Bar -->
+        <div class="navSecTopImage">
+
+            <div class="shopCoverPic0">
+                <img src="assets/style/shopMainPage/SHOP@2x.png" alt="shopbanner">
+            </div>
+
+            <div class="shopCoverPic">
+                <img  src="assets/style/shopMainPage/Group 9@2x.png" alt="fanImage">
+            </div>
+            
+        </div>
+
+
+
+        <!-- hop Navigation Bar -->
+        <nav id="nav_shop" class="shopNavbar">
+
+            <div class="alignCenter">
+
+                <img src="assets/style/shopMainPage/logo@2x.png" alt="logo" class="navLogo">
+
+                <p id="text" class="nav_centerName">FANSHOP</p>
+
+                <button  class="newWindowBtn favorite_Hub" >
+                    <span class="favNumber" id="favShownNum"> 0 </span>
+                    <img src="assets/style/shopMainPage/btnHeartOutLine@2x.png" alt="favBtn">
+                </button>
+                
+                <button id="open_shop" class="newWindowBtn shopping_Hub" onclick="show_Shop()">
+                    <span class="shopNumber" id="bagShownNum"> 0 </span>
+                    <img src="assets/style/shopMainPage/017-shopping bag@2x.png" alt="shopBtn">
+                </button>
+
+            </div>
+
+        </nav>
+        <div class="fontSizzeBtnArea">
+            <div class="fontSizeButtons">
+                <button class="fontBtnIncrease" onclick="IncreaseFontSize()">
+                    <span class="fontBtn BtnIncrease">+</span>
+                </button>
+                <img src="assets\style\shopMainPage\fontBtnLabel@2x.png" alt="fontLabel" class="labelOfButton">
+                <button class="fontBtnDecrease" onclick="DecreaseFontSize()">
+                    <span class="fontBtn BtnDecrease">-</span>
+                </button>
+            </div>
+        </div>
+
+       
+
+
+
+
+        <!-- Shopping Bag (Shopping Cart) -->
+        <div class="shoppingBag_Background">
+
+            <div id="ShoppingBag">
+
+                <div>
+                    <button id="SB_Btnclose" >
+                        <img  src="assets/style/shoppingBag/close-button up.png" alt="closeBtn Shop" onclick="hide_Shop()">
+                    </button>
+                </div>
+        
+                <div id="SB_productTable">
+        
+                    <table class="SB_productLineTable">
+
+                        <thead>
+                            <tr class="SB_heding">
+                                <td class="SB_heding1" colspan="3">Product</td>
+                                <td class="SB_margin2"></td>
+                                <td class="SB_heding2">Quantity</td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_heding2">Price per unit</td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_heding2">Sum</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+
+                        <tbody>                        
+
+                            <!-- products comes here -->
+
+                        </tbody>
+
+
+                        <tfoot>
+                            <tr class="SB_magin0" id="SB_magin_E1"></tr>
+            
+                            <tr id="SB_EMPTYproductLine01">
+                                <td id="SB_productLineImage"></td>
+                                <td class="SB_margin1"></td>
+                                <td class="SB_productLineName"></td>
+                                <td class="SB_margin2"></td>
+                                <td id="SB_productLineQuantity"></td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_productLinePricePU"></td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_productLineSum"></td>
+                            </tr>
+
+                            <tr class="SB_magin0" id="SB_magin_E2"></tr>
+            
+                            <tr id="SB_EMPTYproductLine02">
+                                <td id="SB_productLineImage"></td>
+                                <td class="SB_margin1"></td>
+                                <td class="SB_productLineName"></td>
+                                <td class="SB_margin2"></td>
+                                <td id="SB_productLineQuantity"></td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_productLinePricePU"></td>
+                                <td class="SB_margin3"></td>
+                                <td class="SB_productLineSum"></td>
+                            </tr>
+                        </tfoot>
+        
+                    </table>                               
+                </div>    
+
+
+                
+                <form name="SB_billingSumbmit" >
+
+                    <div id="SB_calculateArea">
+
+                    
+                        <div id="SB_shippingArea">
+        
+                            <p class="SB_textShipping">Customer Details</p>
+        
+                            <div>
+                                <label class="SB_txtGetInpLeb" > First Name:</label>
+                                <input name="getFirstName" class="SB_getInp" type="text" placeholder="First Name"/>
+                            </div>
+                    
+                            <div>
+                                <label class="SB_txtGetInpLeb"> Surname:</label>
+                                <input  name="getSurName" class="SB_getInp" type="text" placeholder="Surname"/>
+                            </div>
+                    
+                            <div>
+                                <label class="SB_txtGetInpLeb" >Email:</label>
+                                <input name="getEmail" class="SB_getInp" type="email" placeholder="Email Address"/>
+                            </div>
+        
+                            <div>
+                                <label class="SB_txtGetInpLeb" >Shipping Address:</label>
+                                <textarea name="getAddress" type="text" cols="24" rows="5"></textarea>
+                            </div>
+                            
+                        </div>
+                        
+        
+                        <div id="SB_billingArea">
+
+                            <div>
+                                <label class="SB_textShipping2">Shipping method</label><br>
+                                <select class="SB_SelectShipMeth">
+                                    <option value="22.11">DHL Express Worldwide</option>
+                                    <option value="13.34">LocalMail</option>
+                                </select>
+                            </div>
+
+                            <table class="SB_billingTable">
+                                <tr>
+                                    <td class="SB_textBill1">Sum:</td>
+                                    <td class="SB_moneyProductSum">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="SB_textBill1">Shipping Costs:</td>
+                                    <td class="SB_moneySippingCost">$22.11</td>
+                                </tr>
+                                <tr>
+                                    <td class="SB_billHLine" colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="SB_textBill2">Total amount:</td>
+                                    <td id="SB_moneyTotal">$0.00</td>
+                                </tr>
+                            </table>
+                            <button type="button" id="SB_btnCheckout" onclick="validateName()">
+                                <img src="assets/style/shoppingBag/ADD button.png" alt="">
+                            </button>
+                        </div>
+                    
+                    </div>
+                </form>
+            </div>
+            <script src="assets/scripts/shoppingBag.js"></script>
+        </div>
+        
+
+
+
+
+
+        <div id="productBuyingBox_create"> </div>
+       
+
+    
+
+        <div class="mainContents">
+
+
+            <div class="list01_heading">
+                <p class="mainShop_txtHeading">
+                    TOPS PRODUCTS
+                </p>
+            </div>
+
+
+            <div class="product_list01">
+
+
+                <div class="card_01">
+                    <Script>
+                        productCardCreate(
+                            'P001',
+                            'Nike Dri-FIT Legend',
+                            '27.35',
+                            'TEAM ELEVEN CLASSIC EDITION',
+                            'The Nike Dri-FIT Legend T-Shirt is an essential layer with an odor-resistant finish that helps keep you fresh through workouts at any level. Lightweight fabric breathes and wicks sweat so you stay cool and dry from warmups well into the afterburn.',
+                            'products/product_001/product_img01.png',
+                            'products/product_001/product_img02.png',
+                            'products/product_001/product_img01.png'
+                        );     
+                    </Script>
+                </div>
+
+
+                <div id="card_02" class="card_02">
+                    <Script>
+                        productCardCreate(
+                            'P002',
+                            'RED LINE T-SHIRT',
+                            '25.00',
+                            'TEAM ELEVEN CLASSIC EDITION',
+                            'The hunt for silverware never ends. A Pixiu emblem takes center stage on this adidas soccer t-shirt. A reflection of Real Madrids quest for trophies through the lens of Chinese folklore, the mythical beast is intricately embroidered onto  the chest. Soft single jersey makes this tee too comfortable to save for celebrations.',
+                            'products/product_002/product_img01.png',
+                            'products/product_002/product_img02.png',
+                            'products/product_002/product_img01.png'
+                        );
+
+                    </Script>
+                </div>
+
+
+                <div class="card_03">
+                    <Script>
+                        productCardCreate(
+                            'P003',
+                            'NikeCourt Flex Ace',
+                            '35.40',
+                            'Men 9 Soccer Shorts',
+                            'The NikeCourt Flex Ace Shorts were created with comfort in mind. The redesigned waistband adds breathability where you need it the most. Court-specific hem vents give you the mobility you need to keep the pace during fast play. This product is made with at least 75% recycled polyester.',
+                            'products/product_006/product_img01.png',
+                            'products/product_006/product_img01.png',
+                            'products/product_006/product_img01.png'
+                        ) ;    
+                    </Script>
+                </div>
+
+
+                <div class="card_04">
+                    <Script>
+                        productCardCreate(
+                            'P004',
+                            'OWN THE RUN TEE',
+                            '35.00',
+                            'NIKE BLACK SPORT EDITION',
+                            'Made on soft and lightweight cotton, the Jordan Jumpman Classics T-Shirt celebrates the brands legacy of flight with a play of colorful graphics.',
+                            'products/product_003/product_img01.png',
+                            'products/product_003/product_img01.png',
+                            'products/product_003/product_img01.png'
+                        )   ;  
+                    </Script>                   
+                </div>
+
+
+            </div>
+
+            <div class="product_list02">
+
+
+                <div class="card_05">
+                    <Script>
+                        productCardCreate(
+                            'P005',
+                            'NIKE FLIGHT',
+                            '27.35',
+                            'SOCCER BALL DARK EDITION',
+                            'Honed over 8 years and 1,700 hours of testing, the Nike Flight Soccer Ball is a revolution in consistent flight. Molded grooves and 3D-printed ink fine tune flight through the air to help players put the ball exactly where they want it.',
+                            'products/product_007/product_img01.png',
+                            'products/product_007/product_img01.png',
+                            'products/product_007/product_img01.png'
+                        );     
+                    </Script>
+                </div>
+
+
+                <div class="card_06">
+                    <Script>
+                        productCardCreate(
+                            'P006',
+                            'NIKE VAPOR UV 3',
+                            '75.40',
+                            'Big Kids FOOTBALL CLEAT',
+                            'The Nike Vapor Untouchable Varsity 3 has synthetic leather for lightweight durability. Padding around the ankle provides comfort, and mesh details add breathability. The 14-stud plate provides traction for quick acceleration and sharp cuts.',
+                            'products/product_008/product_img01.png',
+                            'products/product_008/product_img01.png',
+                            'products/product_008/product_img01.png'
+                        );
+
+                    </Script>
+                </div>
+
+
+                <div class="card_07">
+                    <Script>
+                        productCardCreate(
+                            'P007',
+                            'NIKE SPORTWEAR',
+                            '90.00',
+                            "11 MEN HOODIES WHITE",
+                            "The Nike Sportswear Hoodie is made with a fabric blend of recycled and organic materials and new construction processes to minimize waste. This unique approach produces a speckled French terry lining and a smooth face. This product is made with at least 75% sustainable materials, using a blend of recycled polyester and organic cotton fabrics. The blend is at least 10% recycled fabric or at least 10% organic cotton fabric.",
+                            'products/product_009/product_img01.png',
+                            'products/product_009/product_img01.png',
+                            'products/product_009/product_img01.png'
+                        ) ;    
+                    </Script>
+                </div>
+
+
+                <div class="card_08">
+                    <Script>
+                        productCardCreate(
+                            'P008',
+                            'NIKE DRI-FIT',
+                            '45.78',
+                            'TEAM ELEVEN CLASSIC EDITION',
+                            'The Nike Dri-FIT T-Shirt is made with soft, sweat-wicking fabric to help you stay comfortable from your first set through your last.',
+                            'products/product_005/product_img01.png',
+                            'products/product_005/product_img02.png',
+                            'products/product_005/product_img01.png'
+                        )   ;  
+                    </Script>                   
+                </div>
+
+
+            </div>
+
+
+            <div class="list02_heading">
+                <p class="mainShop_txtHeading">
+                    PREMIUM PRODUCTS
+                </p>
+            </div>
+
+
+
+            <div class="product_list03">
+
+
+                <div class="card_09">
+                    <Script>
+                        productCardCreate(
+                            'P009',
+                            'SPORT CAP',
+                            '27.35',
+                            'TEAM ELEVEN PREMIUM EDITION',
+                            'Front panel backed with a foam padding for added comfort. UA Microthread fabric uses re-engineered fibres designed to give superior stretch & breathability. Built-in HeatGear sweatband wicks away sweat to keep you cool & dry. Stretch construction provides a comfortable fit. Embroidered logos. Interior name tag for personalization, perfect for adding contact information to make sure misplaced gear always finds its way home.',
+                            'products/product_010/product_img01.png',
+                            'products/product_010/product_img01.png',
+                            'products/product_010/product_img01.png'
+                        );     
+                    </Script>
+                </div>
+
+
+                <div class="card_10">
+                    <Script>
+                        productCardCreate(
+                            'P010',
+                            'COFFEE MUG',
+                            '75.40',
+                            'TEAM ELEVEN PREMIUM EDITION',
+                            'Plastic and metal cups often leave their ingredients in the beverage to change the taste and properties, making you feel unsatisfied with the drinking experience. Porcelain cup is a little expensive, but it is safer to use in all materials. Porcelain mugs won’t rust, stain, or get scratched up. They can be wiped down or hand washed. Clean quickly and is dishwasher-safe.',
+                            'products/product_012/product_img01.png',
+                            'products/product_012/product_img01.png',
+                            'products/product_012/product_img01.png'
+                        );
+
+                    </Script>
+                </div>
+
+
+                <div class="card_11">
+                    <Script>
+                        productCardCreate(
+                            'P011',
+                            'SCHOOL BAG',
+                            '90.00',
+                            "TEAM ELEVEN PREMIUM EDITION",
+                            "EASY CARRY - Adjustable & detachable straps and a comfortable top handle convert bag to a handbag from a backpack. CAPACITY - Measures 11.6L x 4.5W x 16H Perfect to hold a 14 laptop, files, paper-size documents, and some other daily necessaries. STYLISH - Fashionable design with the vintage look, suitable for school, business, shopping, trip or daily use",
+                            'products/product_013/product_img01.png',
+                            'products/product_013/product_img01.png',
+                            'products/product_013/product_img01.png'
+                        ) ;    
+                    </Script>
+                </div>
+
+
+                <div class="card_12">
+                    <Script>
+                        productCardCreate(
+                            'P012',
+                            'SPORT SHORT',
+                            '45.78',
+                            'TEAM ELEVEN PREMIUM EDITION',
+                            'Made on soft and lightweight cotton, the Jordan Jumpman Classics T-Shirt celebrates the brands legacy of flight with a play of colorful graphics.',
+                            'products/product_014/product_img01.png',
+                            'products/product_014/product_img01.png',
+                            'products/product_014/product_img01.png'
+                        )   ;  
+                    </Script>                   
+                </div>
+
+                
+                
+            </div>
+            
+            <div class="footerLogoSet">
+                <img src="assets/style/shopMainPage/Brand logo bar@2x.png" alt="logo set" class="footerLogeSet_img">
+            </div>
+            
+        </div>  
+
+        <script src="scripts/contraller.js"></script>
+        <script src="scripts/fontSize.js"></script>
+        <script>
+            window.addEventListener("scroll", function()
+            {
+                let navBar = document.getElementById("nav_shop");
+
+                if(window.pageYOffset > 800){
+                    navBar.classList.add("nav-long");
+                } else{
+                    navBar.classList.remove("nav-long")
+                }
+            })
+
+            let shopNumberShow = document.querySelector('.shopNumber');
+            let shopNumberShow_img = document.querySelector('.newWindowBtn');
+
+        </script>
+        
+
+    
+    </body>
+</html>

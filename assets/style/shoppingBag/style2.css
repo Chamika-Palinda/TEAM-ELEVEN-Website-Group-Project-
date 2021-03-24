@@ -1,0 +1,359 @@
+/* This is The CSS file which belongs to Shopping Bag */
+
+/* Main div tag in the shop I set visibility hidden and when the shopping bag button clicked it visible again */
+
+
+.shoppingBag_Background{
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    background-color: #00000046;     
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+.shoppingBag_Background_active{
+    visibility: visible;
+    opacity: 1;
+}
+
+#ShoppingBag{
+    
+    width: 960px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0EFEE;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    margin: 84px auto;
+}
+
+#SB_Btnclose{
+    opacity: 0.8;
+    width: 28px;
+    height: 28px;
+    margin: 40px 42px 0px 890px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    
+}
+
+#SB_Btnclose:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#SB_Btnclose:active{
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+#SB_productTable{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+#SB_calculateArea{
+    margin: 60px 50px 100px 0px;
+    width: 770px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Oswald;
+}
+
+.SB_productLineTable{
+    border: 0 solid transparent;
+    border-spacing: 0;
+    
+}
+/* Font settings */
+.SB_heding,
+.SB_txtProductSub,
+#SB_txtProductSize{
+    font-family: Oswald;
+}
+.SB_heding{
+    font-size: 18px;
+    font-weight: 500;
+}
+.SB_heding1,.heding2{
+    padding-bottom: 10px;
+}
+.SB_heding1{
+    padding-left:10px ;
+}
+
+.SB_textShipping{
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.SB_textShipping2{
+    color: #949595;
+    font-size: 16px;
+}
+.SB_productLinePricePU{
+    opacity: 0.7;
+}
+
+.SB_txtProductHead,
+.SB_productLinePricePU,
+.SB_productLineSum,
+.SB_quantityNum{
+    font-family: Righteous;
+    color: white;
+}
+#SB_txtProductSize{
+    font-size: 16px;
+    color: white;
+}
+.SB_txtProductHead{
+    font-size: 16px;
+    text-align: left;
+}
+
+.SB_productLinePricePU,
+.SB_productLineSum,
+.SB_quantityNum{
+    font-size: 20px;
+}
+
+.SB_heding2,
+.SB_productLinePricePU,
+.SB_productLineSum,
+.SB_quantityNum{
+    text-align: center;
+}
+
+.SB_quantityNum{
+    margin: -4px 15px 0px 15px;
+}
+
+.SB_textBill1,
+.SB_moneyProductSum,
+.SB_moneySippingCost
+{ 
+    font-size: 20px;
+    color: #414141;
+}
+.SB_moneyProductSum,
+.SB_moneySippingCost,
+#SB_moneyDiscount,
+#SB_moneyTotal{
+    text-align: right;
+}
+
+
+
+/*spasing and gilds*/
+
+#SB_billingArea{
+    width: 340px;
+    margin-top: 20px;
+}
+
+.SB_billingTable{
+    margin-top: 30px;
+    order: 0 solid transparent;
+    border-spacing: 0;
+}
+
+.SB_billHLine{
+    height: 2px;
+    background-color: #F63F17;
+}
+#SB_moneyTotal{
+    padding-top: 12px;
+    color: #F88922;
+    font-size: 24px;   
+}
+.SB_textBill2{
+    font-size: 24px; 
+    color: #F63F17;
+}
+
+#SB_moneyDiscount{
+    padding-bottom: 12px;
+}
+
+.SB_billingTable td{
+    width: 170px;
+}
+.SB_magin0{
+    background-color: #F0EFEE;
+    height: 12px;
+}
+td{
+    box-sizing: border-box;
+}
+.SB_margin4{
+    width: 10px;
+    background-color: #F0EFEE;
+}
+.margin1{
+    width: 10px;
+}
+.SB_margin2{
+    width: 40px;
+}
+.SB_margin3{
+    width: 20px;
+}
+
+.SB_SelectShipMeth{
+    width: 340px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 6px 16px 9px 16px;
+    font-family: oswald;
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+    margin-bottom: 12px;
+    border-radius: 0;
+    border: 1px solid #707070;
+}
+.SB_productLine, 
+#SB_EMPTYproductLine01,
+#SB_EMPTYproductLine02{
+    background-image: url("Rectangle 20.png");
+    width: 770;
+    height: 112;
+    box-sizing: border-box;
+}
+
+#SB_EMPTYproductLine01,
+#SB_EMPTYproductLine02{
+    opacity: 0.5;
+}
+
+.SB_productLine,
+#SB_EMPTYproductLine01 ,
+#SB_EMPTYproductLine02 td{
+    height: 112px;
+}
+#SB_productLineImage{
+    width: 120px;
+    box-sizing: border-box;
+    padding: 0px 10px 0px 10px;
+}
+#SB_productLineImage img{
+    height: 100px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.SB_productLineName{
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+}
+#SB_productLineQuantity{
+    padding-top: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#SB_productLineQuantity,
+.SB_productLinePricePU,
+.SB_productLineSum
+{
+    width: 120px;
+}
+
+#SB_btnMin{
+    opacity: 0.3;
+}
+#SB_btnPlus, #btnMin{
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
+    outline: none;
+    transition: 0.1s;
+
+}
+.SB_btnProductClose{
+    width: 40px;
+    height: 112px;
+    background-color:#B6B7B9;
+    border: transparent;
+    outline: none;
+    transition: 0.1s;
+}
+
+#SB_btnCheckout{
+    margin-top: 54px;
+    width: 340px;
+    height: 54px;
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+    transition: 0.2s;
+}
+#SB_btnCheckout:hover{
+    transition: all ease 0.1s;
+    transform: scale(1.01);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#SB_btnPlus:hover,
+#SB_btnMin:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    opacity: 1;
+}
+
+#SB_btnCheckout:active{
+    transition: all ease 0.2s;
+    transform: scale(0.975);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+#SB_btnPlus:active,
+#SB_btnMin:active{
+    transform: scale(0.8);
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.SB_txtGetInpLeb{
+    font-size: 16px;
+    color: #949595;
+    float: left;
+    width: 150px;                               /* Aligning form names  */
+    margin-top: 8px;
+    clear: left;
+}
+.SB_getInp{
+    height: 40px;
+}
+
+.SB_getInp, textarea{
+    padding:0px 5px 0px 10px;                    /* Giving Type space */
+    box-sizing: border-box;
+    font-family: Oswald;
+    font-size: 14px;
+    color: #707070;
+    border-radius: 0;
+    border: 1px solid #707070;
+}
+
+.SB_getInp, textarea{
+    width:330px;                                /* Giving Input fild lenth */
+}
+
+textarea{               
+    margin-top: 0px;   
+    resize: none; 
+    resize: vertical;       
+}
+

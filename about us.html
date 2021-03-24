@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="styles/aboutus_page_css/about us.css" type="text/css" rel="stylesheet">
+    <script src="about%20us.js" async></script>
+
+</head>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        max-width: 1920px;
+        width: 100vw;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navBar_Main{
+        width: 1206px;
+        position: relative;
+    }
+
+    .navBar_Main_background{
+        position: absolute;
+        
+    }
+
+    .navBar_Main_img{
+        width: 1920px;
+        margin-top: -70px;
+        z-index: 0;
+    }
+
+    span.rotate{
+
+        display: inline-block;
+        *display: inline; /* Used to get IE 6 & 7 to behave */
+        zoom: 1; /* Used to get IE 6 & 7 to behave */
+        -webkit-transform: rotate(-3deg); 
+        -moz-transform: rotate(-3deg); 
+        -ms-transform: rotate(-3deg); 
+        -o-transform: rotate(-3deg);  
+        transform: rotate(-3deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+        font-family: oswald;
+        font-size: 32px;
+        font-weight: bold;
+        
+    }
+
+    .main_TopNavbarMenu{
+        position: absolute;
+    }
+
+    .path_news{
+        position: absolute;
+        z-index: 1;
+        top: 120px;
+        left: 440px;
+        color: #707070;
+    }
+    .path_blogs{
+        position: absolute;
+        z-index: 1;
+        top: 112px;
+        left: 560px;
+        color: #707070;
+        transition: 0.2s;
+     
+    }
+
+    .path_shop{
+        position: absolute;
+        z-index: 1;
+        top: 102px;
+        left: 700px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_gallery{
+        position: absolute;
+        z-index: 1;
+        top: 92px;
+        left: 830px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_about_us{
+        position: absolute;
+        z-index: 1;
+        top: 85px;
+        left: 1000px;
+        color: #FC9904;
+        transition: 0.2s;
+    }
+    
+    .path_blogs:hover,
+    .path_shop:hover,
+    .path_gallery:hover,
+    .path_news:hover{
+        color: #EAEAEA;
+        transition: 0.2s;
+    }
+
+</style>
+<body>
+    <div class="navBar_Main_background">
+        <img class="navBar_Main_img" src="images/NavBars/aboutUs_NavBar@2x.png" alt="navBar">
+    </div>
+
+    <div class="navBar_Main">       
+          <div class="main_TopNavbarMenu">
+              <a href="Main_page.html"><span class="rotate path_news">HOME</span></a>
+              <a href="blog_page.html"><span class="rotate path_blogs">BLOGS</span></a>
+              <a href="main_Shopping_Bag.html"><span class="rotate path_shop">SHOP</span></a>
+              <a href="gallery_Page.html"><span class="rotate path_gallery">GALLERY</span></a>
+              <a href="about us.html"><span class="rotate path_about_us">ABOUT</span></a>
+        </div> 
+    </div> 
+    
+    <div class="wraps">
+        <div class="header1"><h1>Team Eleven</h1></div>
+        <div class="wrapper">
+                <h2>Meet our team of created this web site.</h2>
+                <p>
+                    Your talent determines what you can do. Your motivation determines how much you are willing to do. Your attitude determines how well you do it.
+                </p>
+                
+                <div class="team">
+                    
+                    <div class="teamMember">
+                        <img src="styles/aboutus_page_css/img1.png" alt="members" class="image">
+                        <div class="overlay">
+                        <div class="text">
+                            <h4>Thrindu Priyankara</h4>
+                            Student role 1<br>
+                            IIT id:20191125<br>
+                            UoW id:w<br>
+                            <a href="">#Tharindu</a>
+                        </div>
+                     </div>
+                    </div>
+                
+                    <div class="teamMember">
+                        <img src="styles/aboutus_page_css/img2.png" alt="members" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Chamika Palinda</h4>
+                                Student role 2<br>
+                                IIT id:20191095<br>
+                                UoW id:w17903510<br>
+                                <a href="Main_page.html">#Chamika</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="teamMember">
+                        <img src="styles/aboutus_page_css/img3.png" alt="members" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Chamitha Dulan</h4>
+                                Student role 3<br>
+                                IIT id:20191113<br>
+                                UoW id:w1790360<br>
+                                <a href="about us.html">#Dulan99</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="teamMember ">
+                        <img src="styles/aboutus_page_css/img4.png" alt="members" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Gayasara Weerasinghe</h4>
+                                Student role 4<br>
+                                IIT id:20191261<br>
+                                UoW id:w1790274<br>
+                                <a href="">#Gayasara</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+        </div>
+    </div>
+</body>
+</html>

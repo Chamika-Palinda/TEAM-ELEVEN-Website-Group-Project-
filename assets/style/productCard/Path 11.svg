@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="315" height="429" viewBox="0 0 315 429">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.769" cy="0.781" r="0.709" gradientTransform="matrix(0.992, 0.13, -0.088, 0.67, 0.048, 0.1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc9904"/>
+      <stop offset="1" stop-color="#d0310e"/>
+    </radialGradient>
+    <filter id="Path_11" x="0" y="0" width="315" height="429" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.09"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_11)">
+    <path id="Path_11-2" data-name="Path 11" d="M4.219,0H265.781A4.293,4.293,0,0,1,270,4.364V379.636A4.293,4.293,0,0,1,265.781,384H4.219A4.293,4.293,0,0,1,0,379.636V4.364A4.293,4.293,0,0,1,4.219,0Z" transform="translate(21.5 21.5)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

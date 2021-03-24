@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "Oswald";
+    src: url("Oswald-Bold.ttf") format("opentype");
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+    margin-bottom: 100px;
+}
+
+
+.header1 {
+    position: relative;
+    background-color: orangered;
+    height: 400px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: "Oswald Se";
+}
+.header1 h1{
+    box-sizing: border-box;
+    padding-top: 100px;
+    
+}
+.team{
+    display: flex;
+    margin: 20px;
+    height:max-content;
+    background-color: orangered;
+    padding-top: 10px;
+
+}
+.wrapper.team .team_member .image{
+    position: absolute;
+    width: 320px;
+    height: 450px;
+    background: white;
+    margin: 10px;
+}
+.wrapper h2{
+    font-family:"Oswald Light",Oswald;
+    font-size: 38px;
+    text-align: center;
+    color: cornsilk;
+
+}
+.wrapper p{
+    padding: 15px;
+    font-family:"Oswald Medium",Oswald;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 23px;
+    color: cornsilk;
+
+}
+.wrapper.team.teamMember.image{
+    height: 100px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+.wrapper{
+    background-color:black;
+    height: 450px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.teamMember {
+    position: relative;
+    width: 320px ;
+    height: 450px;
+    margin: 10px;
+    background-color: papayawhip;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 166, 0, 0.8);
+}
+
+.teamMember:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    font-family: "Oswald SemiBold",Oswald;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align:left;
+}
+.header2{
+    background-color: orangered;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-family: "Oswald SemiBold", Oswald;
+}
+
+.navBar_Main_background{
+    z-index: 100;
+}
+.main_TopNavbarMenu{
+    z-index: 101;
+}
+
+.wraps{
+    margin-bottom: 100px;
+}

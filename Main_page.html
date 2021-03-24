@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .navBar_Main{
+        width: 1206px;
+        position: relative;
+    }
+
+    .navBar_Main_background{
+        position: absolute;
+        z-index: 8;
+        
+    }
+
+    .navBar_Main_img{
+        width: 1920px;
+        margin-top: -70px;
+        z-index: 0;
+    }
+
+    span.rotate{
+
+        display: inline-block;
+        *display: inline; /* Used to get IE 6 & 7 to behave */
+        zoom: 1; /* Used to get IE 6 & 7 to behave */
+        -webkit-transform: rotate(-3deg); 
+        -moz-transform: rotate(-3deg); 
+        -ms-transform: rotate(-3deg); 
+        -o-transform: rotate(-3deg);  
+        transform: rotate(-3deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+        font-family: oswald;
+        font-size: 32px;
+        font-weight: bold;
+        
+    }
+
+    .main_TopNavbarMenu{
+        position: absolute;
+    }
+
+    .path_news{
+        position: absolute;
+        z-index: 10;
+        top: 120px;
+        left: 440px;
+        color: #FC9904;
+    }
+    .path_blogs{
+        position: absolute;
+        z-index: 10;
+        top: 112px;
+        left: 560px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_shop{
+        position: absolute;
+        z-index: 10;
+        top: 102px;
+        left: 700px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_gallery{
+        position: absolute;
+        z-index: 10;
+        top: 92px;
+        left: 830px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_about_us{
+        position: absolute;
+        z-index: 10;
+        top: 85px;
+        left: 1000px;
+        color: #707070;
+        transition: 0.2s;
+    }
+    
+    .path_blogs:hover,
+    .path_shop:hover,
+    .path_gallery:hover,
+    .path_about_us:hover{
+        color: #EAEAEA;
+        transition: 0.2s;
+    }
+
+
+
+</style>
+
+<link rel="stylesheet"  type="text/css" href="styles/main_page_css/main_page.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- creating  top navigation bar -->
+  <div class="navBar_Main_background">
+    <img class="navBar_Main_img"src="images/NavBars/main_NavBar@2x.png" alt="navBar">
+</div>
+
+<div class="navBar_Main">       
+      <div class="main_TopNavbarMenu">
+          <a href="Main_page.html"><span class="rotate path_news">HOME</span></a>
+          <a href="blog_page.html"><span class="rotate path_blogs">BLOGS</span></a>
+          <a href="main_Shopping_Bag.html"><span class="rotate path_shop">SHOP</span></a>
+          <a href="gallery_page.html"><span class="rotate path_gallery">GALLERY</span></a>
+          <a href="about us.html"><span class="rotate path_about_us">ABOUT</span></a>
+    </div> 
+</div>
+<!-- ending of the navigation bar -->
+<div class="landingPageBackground">
+  <div class="main_page">
+    <a href="Main_page.html"></a>
+</div>
+  <img src="images/background images/backimg.jpg" alt="" class="backgroundImg">
+  
+  <div class="ContentGoesHere">
+
+ <!-- navigation bar hidden under the top navigation bar -->
+    <div class="BottomNavbarMenu">
+      <a href="about us.html">About Us</a>
+      <a href="#">Gallery</a>
+      <a href="main_Shopping_Bag.html">Shop</a>
+      <a href="blog_page.html">Blogs</a>
+      <a href="Main_page.html">Home</a>
+    </div>    
+<!-- ending of the bottom navagation bar -->
+    <div class="landingPageImageSliderSvg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="1000" viewBox="0 0 1366 905.806">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #8a8a8a;
+              opacity: 0.73;
+            }
+          </style>
+        </defs>
+      
+        <!-- setting up the image slider -->
+        <div class="slider">
+          <div class="images">
+            <input type="radio" name="slide" id="img1">
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">            
+            <input type="radio" name="slide" id="img4">
+
+            <img src="images/slider images/ss3@2x.png" class="m1" alt="img1">
+            <img src="images/slider images/ss2@2x.png" class="m2" alt="img2">
+            <img src="images/slider images/ss@2x.png" class="m3" alt="img3">
+            <img  src="images/slider images/Group 2@2x.png" class="m4" alt="img4">
+          </div>
+        <!-- ending of the image slider -->
+
+          <div class="dots">
+              <label for="img1"></label>
+              <label for="img2"></label>
+              <label for="img3"></label>
+              <label for="img4"></label>
+          </div>
+      </svg>
+    </div>
+
+    <div class="bar1UnderSlider">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1566.074" height="1124.706" viewBox="100 0 1566.074 1124.706">
+        <g id="news_brief" data-name="news brief" transform="translate(104.577 -801.998)">
+          <path id="briefNewsLayout" d="M-13.375,3.412,1364.215,42.1l99.538,889.643L74.353,838.088Z" transform="matrix(0.995, 0.105, -0.105, 0.995, 6.119, 847.062)" fill="#fff" />
+          <path id="under_the_slider" data-name="under the slider" d="M-5.082.839,1372.78-10.276l5.094,36.244L-.009,36.935Z" transform="translate(-2.391 812.882) rotate(8)"/>
+        </g>
+      </svg>
+    </div>  
+
+    <div class="OverTheSliderLayout">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="193.62" viewBox="0 0 1366 193.62">
+        <g id="over_the_slider_layout" data-name="over the slider layout" fill="#fff">
+          <path d="M 0.5 193.0817565917969 L 0.5 0.5000521540641785 L 1365.5 0.5000521540641785 L 1365.5 91.52498626708984 L 0.5 193.0817565917969 Z" stroke="none"/>
+          <path d="M 1 1.000045776367188 L 1 192.5433044433594 L 1365 91.06093597412109 L 1365 1.000045776367188 L 1 1.000045776367188 M 0 4.57763671875e-05 L 1366 4.57763671875e-05 L 1366 91.98921966552734 L 0 193.6203918457031 L 0 4.57763671875e-05 Z" stroke="none" fill="#707070"/>
+        </g>
+      </svg>
+    </div>
+    
+
+    <div class="BarUnderTheNewsLayout">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1387.076" height="268.442" viewBox="10 100 1387.076 268.442">
+        <path id="bar_under_the_news" data-name="bar under the news" d="M-12.921-18.844,1372.7,25.228l4.448,31.647L-8.033,15.937Z" transform="translate(20.711 20.459) rotate(8)"/>
+      </svg>      
+    </div>
+   
+    <!-- setting up the news layout -->
+    <div class="container">
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                  <img src="images/news images/news1s.jpg">
+                <div class="newsHeading">
+                    <h3>Kanes form what is it</h3>
+                </div>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="contentText">
+                <p>What is the mystrey behind the kanes form
+                </p>
+                  <a href="#">Read More</a> 
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                  <img src="images/news images/news2s.jpg" id="aaa">
+                  <div class="newsHeading">
+                    <h3>Real Madrid vs Barcelona</h3>
+                </div>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="contentText">
+                <p>Math live 
+                </p>
+                  <a href="#">Read More</a>
+              </div>
+          </div>
+      </div> 
+
+       <div class="card">
+          <div class="face face1">
+              <div class="content">
+                  <img src="images/news images/news3s.jpg">
+                   <div class="newsHeading">
+                    <h3>Kanes form what is it</h3>
+                </div>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="contentText">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
+                  <a href="#">Read More</a>
+              </div>
+          </div> 
+      </div>  
+      <div class="newsHeader">
+        <h1>LATEST NEWS</h1>
+      </div>
+<!-- settingup the blog content -->
+      <div class="blogsLayout">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="1993.072" viewBox="0 0 1366 1993.072">
+          <path id="bloglayout" d="M0-231.072,1366,0V1762H0Z" transform="translate(0 231.072)" fill="#F53F17" />
+        </svg>
+      </div>
+      <div class="BlogsHeader">
+        <h1>POPULAR BLOGS</h1>
+      </div>
+      
+      <div class="wrapper">
+        <div class="blog">
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/blog images/blog1.jpg" alt="">
+                
+                </div>
+               
+                <div class="blog-content">
+                    <h4>Neymar Jr</h4>
+                    <p> Neymar da Silva Santos Júnior (Brazilian Portuguese: [nejˈmaʁ dɐ ˈsiwvɐ ˈsɐ̃tus ˈʒũɲoʁ]; born 5 February 1992), known as Neymar, is a Brazilian professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and the Brazil national team. He is widely considered as one of the best players in the world.</p>
+                    <a href="blog_page.html">read more </a>
+                </div>
+            </div>
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/blog images/blog2.jpg" alt="">
+                   
+                </div>
+              
+                <div class="blog-content">
+                    <h4>The Goat</h4>
+                    <p>Lionel Andrés "Leo" Messi (born 24 June 1987) is an Argentine footballer who plays for FC Barcelona and captains the Argentina national team, mainly as an forward. Messi received several Ballon d'Or and FIFA World Player of the Year nominations by the age of 21, and won in 2009 and 2010. His playing style and small stature has drawn comparisons to Diego Maradona, who himself declared Messi as his "successor.</p>
+                    <a href="blog_page.html">read more </a>
+                </div>
+            </div>
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/blog images/blog3.jpg" alt="">
+                  
+                </div>
+               
+                <div class="blog-content">
+                    <h4>Cristiano Ronaldo</h4>
+                    <p>Cristiano Ronaldo, popularly known by his nickname ‘CR7’ is a Portuguese professional football player. He plays forward for Juventus (Italian club) and the Portugal National Team. Among the greatest of all time to have graced the football pitch, entertaining us with a unique style of play, outstanding dribbles, sensational goals and electrifying speed, Cristiano Ronaldo stands out. The ace skipper has a penchant for scoring incredible goals while inspiring his team to victory. Ronaldo emboldens the perfect definition of winning. We take a close look into the life of this football star who is regarded as one of the greatest players of all-time on the planet in our Cristiano Ronaldo biography facts, childhood, career and personal life</p>
+                    <a href="blog_page.html">read more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end of the settingup blog content -->
+
+      <div class="questionFormNavigater">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="227.395" viewBox="0 0 1366 227.395">
+          <path id="Path_207" data-name="Path 207" d="M0,0H1366V227.4L0,189.529Z" fill="#ff7720" border="5px"/>
+        </svg>
+        
+      </div>
+
+        <div class="question">
+          <a href="quiz.html">
+            <div class="quizmessage">
+            <h3>Lets find out how much do you love football</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="commentLayoutSvg">
+   <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="485.545" viewBox="0 0 1366 485.545">
+  <path id="commentlayouta" d="M0,.794,1366-1.3l-1.23,485.545L0,483.029Z" transform="translate(0 1.296)"/>
+   </svg>
+    </div>
+    
+   
+
+  <div class="footerLine">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1275" height="3" viewBox="0 0 1275 3">
+      <rect id="footerLine" width="1275" height="3" rx="1.5"/>
+    </svg>
+  </div>
+  
+ 
+ <!-- setting up the feedback -->
+ <div class="row2">
+  <div class="column2">
+<div class="ratingsss">
+  <div class="rate_us">
+      <h3>We Value your Rate And Feedback</h3>
+  </div>
+  <div class="rate_us_quotes">
+      <p>
+          Help us to improve!, Give us your rate and feedback about your experience in our website's <br>
+          We will connect with you always.
+      </p>
+  </div>
+  
+  <div class="stars">
+      <form action="">
+          <input class="star star-5" id="star-5" type="radio" name="star" onclick="starmark(this)"/>
+          <label class="star star-5" for="star-5"></label>
+          <input class="star star-4" id="star-4" type="radio" name="star" onclick="starmark(this)"/>
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" name="star"onclick="starmark(this)" />
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" name="star"onclick="starmark(this)" />
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" name="star"onclick="starmark(this)" />
+          <label class="star star-1" for="star-1"></label>
+      </form>
+  </div>
+
+  <div class="ratebtn">
+      <button onclick="Rate()">Rate</button>
+  </div>
+  
+</div>
+  </div>
+
+  <div class="column2">
+      <div class="feedback-section">     
+          <div class="inner-width">
+              <h1>FeedBack</h1>
+              <input type="text" class="names" placeholder="Your Name" id="userName">
+              <input type="email" class="email" placeholder="Your Email" id="userEmail">
+              <textarea rows="1" placeholder="Your Message" class="message" id="comment"></textarea>
+              <button onclick="feedback()">Send</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!--End of the feedbacks-->
+
+
+</div>
+
+
+   <script src="scripts/commentform.js"></script>  
+ 
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .head_main{
+      margin-top: 200px;
+    }
+
+    .navBar_Main{
+        width: 1206px;
+        position: relative;
+    }
+
+    .navBar_Main_background{
+      margin-top: -20PX;
+        position: absolute;
+        z-index: 8;
+        
+    }
+
+    .navBar_Main_img{
+        width: 1920px;
+        margin-top: -70px;
+        z-index: 0;
+    }
+
+    span.rotate{
+
+        display: inline-block;
+        *display: inline; /* Used to get IE 6 & 7 to behave */
+        zoom: 1; /* Used to get IE 6 & 7 to behave */
+        -webkit-transform: rotate(-3deg); 
+        -moz-transform: rotate(-3deg); 
+        -ms-transform: rotate(-3deg); 
+        -o-transform: rotate(-3deg);  
+        transform: rotate(-3deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+        font-family: oswald;
+        font-size: 32px;
+        font-weight: bold;
+        
+    }
+
+    .main_TopNavbarMenu{
+        position: absolute;
+    }
+
+    .path_news{
+        position: absolute;
+        z-index: 10;
+        top: 120px;
+        left: 440px;
+        color: #707070;
+    }
+    .path_blogs{
+        position: absolute;
+        z-index: 10;
+        top: 112px;
+        left: 560px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_shop{
+        position: absolute;
+        z-index: 10;
+        top: 102px;
+        left: 700px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_gallery{
+        position: absolute;
+        z-index: 10;
+        top: 92px;
+        left: 830px;
+        color: #FC9904;
+        transition: 0.2s;
+    }
+
+    .path_about_us{
+        position: absolute;
+        z-index: 10;
+        top: 85px;
+        left: 1000px;
+        color: #707070;
+        transition: 0.2s;
+    }
+    
+    .path_blogs:hover,
+    .path_shop:hover,
+    .path_news:hover,
+    .path_about_us:hover{
+        color: #EAEAEA;
+        transition: 0.2s;
+    }
+
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' media='screen' href='styles/gallery_page_css/gallery.css'>
+
+
+
+</head>
+<body>
+
+  <!-- creating  top navigation bar -->
+<div class="navBar_Main_background">
+  <img class="navBar_Main_img"src="images/NavBars/gallery_NavBar@2x.png" alt="navBar">
+</div>
+
+<div class="navBar_Main">       
+      <div class="main_TopNavbarMenu">
+          <a href="Main_page.html"><span class="rotate path_news">HOME</span></a>
+          <a href="blog_page.html"><span class="rotate path_blogs">BLOGS</span></a>
+          <a href="main_Shopping_Bag.html"><span class="rotate path_shop">SHOP</span></a>
+          <a href="#"><span class="rotate path_gallery">GALLERY</span></a>
+          <a href="about us.html"><span class="rotate path_about_us">ABOUT</span></a>
+    </div> 
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="head_main">
+  <h1>Gallery</h1>
+  </div>
+
+<div class="colour_selector_margin">
+  <div class="dropdown">
+    <button class="dropbtn">Background colour</button>
+    <div class="dropdown-content">
+      <option onclick="document.body.style.backgroundColor='White'">White</option>
+      <option onclick="document.body.style.backgroundColor='Salmon'">Salmon</option>
+      <option onclick="document.body.style.backgroundColor='PeachPuff'">Peach Puff</option>
+      <option onclick="document.body.style.backgroundColor='Pink'">Pink</option>
+      <option onclick="document.body.style.backgroundColor='LightYellow'">Light Yellow</option>
+      <option onclick="document.body.style.backgroundColor='PaleGreen'">Pale Green</option>
+      <option onclick="document.body.style.backgroundColor='GreenYellow'">Green Yellow</option>
+      <option onclick="document.body.style.backgroundColor='LightCyan'">Light Cyan</option>
+      <option onclick="document.body.style.backgroundColor='PowderBlue'">Powder Blue</option>
+      <option onclick="document.body.style.backgroundColor='LightSkyBlue'">Light Sky Blue</option>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="colour_selector_margin">
+  <div class="dropdown">
+    <button class="dropbtn">Text colour</button>
+    <div class="dropdown-content">
+      <option  onclick="document.getElementById('textcolour').style.color = 'Red'">Red</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'DarkRed'">Dark Red</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'DeepPink'">Deep Pink</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'MediumVioletRed'">Medium Violet Red</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'DarkViolet'">Dark Violet</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'Navy'">Navy</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'Maroon'">Maroon</option>
+      <option  onclick="document.getElementById('textcolour').style.color = 'Black'">Black</option>
+    </div>
+  </div>
+</div>
+  <div id="textcolour">
+    <div class="head3">
+  <h3>Click on the images below</h3>
+</div>
+
+
+<div class="row">
+  
+      <div class="gallery">
+    <img src="Images\gallery images\t-shirt.jpg"   onclick="myFunction(this);" 
+    alt="<h2>T-Shirt</h2> <p1>T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.
+       Typically made of cotton textile in a stockinette or jersey knit, it has a distinctively pliable texture compared to shirts
+        made of woven cloth.</p1>
+      <br>
+      <br>">
+ 
+</div>
+
+    <div class="gallery">
+    <img src="Images\gallery images\boal.jpg"   onclick="myFunction(this);" 
+    alt="<h2>Boal</h2> <p1>A football is a prolate spheroid, and it's shaped that way because that's also the shape of an inflated pig's bladder, which is what the first footballs were made of. Soccer balls were also made of pig's bladders, but as soon as technology permitted, those balls got rounder, which made them easier to kick.</p1>
+      <br>
+      <br>">
+  
+  </div>
+    <div class="gallery">
+      <img src="Images\gallery images\goal.jpg"   onclick="myFunction(this);"
+       alt="<h2>Goal</h2> <p1>A goal is scored when the ball passes completely over a goal line at either end of the field of play between two centrally positioned upright goal posts 24 feet (7.32 m) apart and underneath a horizontal crossbar at a height of 8 feet (2.44 m) — this frame is itself referred to as a goal. </p1>
+            <br>
+            <br>">
+   
+  </div>
+  
+      <div class="gallery">
+      <img src="Images\gallery images\shoes.jpg"  onclick="myFunction(this);"
+       alt="<h2>Shoes</h2> <p1>Football boots, called cleats or soccer shoes in North America, are an item of footwear worn when playing football. Those designed for grass pitches have studs on the outsole to aid grip.
+      </p1>
+      <br>
+      <br>">
+    
+  </div>
+
+  
+  <div class="gallery">
+    <img src="Images\gallery images\World-Cup.jpg"   onclick="myFunction(this);" 
+    alt="<h2>World-Cup 2018</h2> <p1>The 2018 FIFA World Cup was an international football tournament contested by men's national teams and took place between 14 June and 15 July 2018 in Russia. It was the 21st FIFA World Cup, a worldwide football tournament held once every four years. </p1>
+    <br>
+    <br>">
+  
+</div>
+</div>
+
+<div class="container">
+ 
+  <img id="expandedImg" style="width:700px;height: 400px;">
+  <div id="imgtext"></div>
+</div>
+</div>
+
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+</body>
+</html>

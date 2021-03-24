@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple football quiz!</title>
+  <link href="styles/quiz_page_css/quiz.css" rel="stylesheet" type="text/css">
+  <script src="scripts/quiz.js" async></script>
+  <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .navBar_Main{
+        width: 1206px;
+        position: relative;
+    }
+
+    .navBar_Main_background{
+        position: absolute;
+        z-index: 8;
+        
+    }
+
+    .navBar_Main_img{
+        width: 1920px;
+        margin-top: -70px;
+        z-index: 0;
+    }
+
+    span.rotate{
+
+        display: inline-block;
+        *display: inline; /* Used to get IE 6 & 7 to behave */
+        zoom: 1; /* Used to get IE 6 & 7 to behave */
+        -webkit-transform: rotate(-3deg); 
+        -moz-transform: rotate(-3deg); 
+        -ms-transform: rotate(-3deg); 
+        -o-transform: rotate(-3deg);  
+        transform: rotate(-3deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+        font-family: oswald;
+        font-size: 32px;
+        font-weight: bold;
+        
+    }
+
+    .main_TopNavbarMenu{
+        position: absolute;
+    }
+
+    .path_news{
+        position: absolute;
+        z-index: 10;
+        top: 120px;
+        left: 440px;
+        color: #707070;
+    }
+    .path_blogs{
+        position: absolute;
+        z-index: 10;
+        top: 112px;
+        left: 560px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_shop{
+        position: absolute;
+        z-index: 10;
+        top: 102px;
+        left: 700px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_gallery{
+        position: absolute;
+        z-index: 10;
+        top: 92px;
+        left: 830px;
+        color: #707070;
+        transition: 0.2s;
+    }
+
+    .path_about_us{
+        position: absolute;
+        z-index: 10;
+        top: 85px;
+        left: 1000px;
+        color: #707070;
+        transition: 0.2s;
+    }
+    
+    .path_blogs:hover,
+    .path_shop:hover,
+    .path_gallery:hover,
+    .path_about_us:hover{
+        color: #EAEAEA;
+        transition: 0.2s;
+    }
+
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+  <div class="navBar_Main_background">
+    <img class="navBar_Main_img"src="images/NavBars/blogs_NavBar@2x.png" alt="navBar">
+</div>
+
+<div class="navBar_Main">       
+      <div class="main_TopNavbarMenu">
+          <a href="Main_page.html"><span class="rotate path_news">HOME</span></a>
+          <a href="blog_page.html"><span class="rotate path_blogs">BLOGS</span></a>
+          <a href="main_Shopping_Bag.html"><span class="rotate path_shop">SHOP</span></a>
+          <a href="gallery_Page.html"><span class="rotate path_gallery">GALLERY</span></a>
+          <a href="about us.html"><span class="rotate path_about_us">ABOUT</span></a>
+    </div> 
+</div> 
+
+<div id="outline">
+  <text><b>Time:</b><text id="time">200</text></text>
+<div id="frame">
+  <div id="status">
+    <h2>Simple football quiz!</h2>
+    <text><b>Question:</b><text id="number">0</text></text>
+      <br>
+      <text><b>Score:</b><text id="score">0</text></text>
+      <br>
+
+      <br><br>
+      <div id="dissapear">
+        <button class="button2" onclick="begin()">Begin</button>
+      </div>
+      <p id="massage1"></p>
+      <p id="massage2"></p>
+      <p id="massage3"></p>
+      <p id="massage4"></p></div>
+</div>
+</div>
+
+
+</body>
+</html>

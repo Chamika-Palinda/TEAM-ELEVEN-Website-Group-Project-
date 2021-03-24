@@ -1,0 +1,114 @@
+body{
+    
+    background-image: url("E:\Programming\Chamika Studying\First Year\Modules Semester 2\Web design and development\Coursework\Landing page\Course work html,css,js\Landing page\assests\images\blog_page_images\backgroundImages\backImg.jpg");
+    background-repeat: no-repeat;
+    background: width 100%;
+
+}
+*{
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+@font-face {
+    font-family: Oswald;
+    src: url("/fonts/Oswald-Bold.ttf") format("opentype");
+
+}
+
+.header{
+    background-color: black;
+    border-radius: 20px;
+    color: #FD9905;
+    text-align: center;
+}
+.blogDetails{
+    background-color:#FD9905 ;
+    border-radius: 10px;
+    height: 60px;
+    
+}
+
+.blogText{
+    color: #FD9905;
+    font-family: 'Oswald ExtraLight', Oswald, serif;
+    font-size: 16;
+}
+.card{
+    margin-top: 10px;
+    z-index: 0;
+    position: relative;
+}
+.card strong{
+    font-family: 'Oswald ExtraLight', Oswald, serif;
+    font-size: 22px;
+    padding: 5px;
+    color:#F53F17;
+
+}
+.card p{
+    font-family: "Oswald SemiBold",Oswald;
+    padding-inline: 1px;
+    padding: 5px;
+  
+}
+
+.Blogbackground{
+    z-index: 6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+.blogContent{
+    z-index: 5;
+    position: absolute;
+    opacity: 1;
+    background-color: black;
+   
+}
+
+.img{
+    float: right;
+    padding: 15px;
+    width: 400px;
+    height: 350px;
+    margin: 5px;
+    border-radius: 100px;
+}
+.blog1{
+    margin-top: 210px;
+    width: 1206px;
+
+}
+
+.blog2{
+    margin-top: 650px;
+    width: 1206px;
+}
+
+.blog3{
+    margin-top: 700px;
+    width: 1206px;
+}
+
+
+.blog4{
+    margin-top: 750px;
+    width: 1206px;
+}
+
+.blogsAuthor
+{
+    font-family:'Oswald ExtraLight', Oswald, serif; 
+    text-decoration: none;
+    color:#414141;
+}
+
+.blogsAuthor:hover
+{
+    font-size: larger;
+    color: black;
+}

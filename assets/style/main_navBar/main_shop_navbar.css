@@ -1,0 +1,95 @@
+
+        .navBar_Main{
+            width: 1206px;
+            position: relative;
+        }
+
+        .navBar_Main_background{
+            position: absolute;
+            overflow: hidden;
+            width: 1920px;
+            
+            
+        }
+
+        .navBar_Main_img{
+            width: 1920px;
+            margin-top: -70px;
+            z-index: 9;
+            
+        }
+
+        span.rotate{
+
+            display: inline-block;
+            *display: inline; /* Used to get IE 6 & 7 to behave */
+            zoom: 1; /* Used to get IE 6 & 7 to behave */
+            -webkit-transform: rotate(-3deg); 
+            -moz-transform: rotate(-3deg); 
+            -ms-transform: rotate(-3deg); 
+            -o-transform: rotate(-3deg);  
+            transform: rotate(-3deg);
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+            font-family: oswald;
+            font-size: 32px;
+            font-weight: bold;
+            
+        }
+
+        .main_TopNavbarMenu{
+            position: absolute;
+        }
+
+        .path_news{
+            position: absolute;
+            z-index: 10;
+            top: 115px;
+            left: 440px;
+            color:#B9B4B4;
+        }
+        .path_blogs{
+            position: absolute;
+            z-index: 10;
+            top: 107px;
+            left: 560px;
+            color: #B9B4B4;
+            transition: 0.2s;
+        }
+
+        .path_shop{
+            position: absolute;
+            z-index: 10;
+            top: 97px;
+            left: 700px;
+            color: #F63F17;
+            transition: 0.2s;
+        }
+
+        .path_gallery{
+            position: absolute;
+            z-index: 10;
+            top: 87px;
+            left: 830px;
+            color: #B9B4B4;
+            transition: 0.2s;
+        }
+
+        .path_about_us{
+            position: absolute;
+            z-index: 10;
+            top: 80px;
+            left: 1000px;
+            color:#B9B4B4;
+            transition: 0.2s;
+        }
+        
+        .path_blogs:hover,
+        .path_news:hover,
+        .path_gallery:hover,
+        .path_about_us:hover{
+            color: #f2f2f2;
+            transition: 0.2s;
+        }
+
+

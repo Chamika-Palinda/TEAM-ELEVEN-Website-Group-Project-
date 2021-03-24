@@ -1,0 +1,590 @@
+.PC_ProductBox{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.PC_box{
+    width: 280px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+}
+
+button{
+    color: transparent;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+/* ------------Product Image Layers------------- */
+
+.PC_productImagesLayerBox{
+    position: relative;
+    width: 280px;
+    height: 384px;
+  
+}
+.PC_productImagesLayer1{
+  width: 200px;
+  margin: 90px 0 0 80px;
+    position: absolute;
+    z-index: 3;
+    transition: 0.3s;
+}
+.PC_productImagesLayer2{
+  width: 220px;
+  margin-top: 85px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s;
+}
+.PC_productImagesLayer3{
+  width: 270px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.7s;
+    position: absolute;
+    z-index: 1;   
+}
+.PC_productBackground{
+    z-index: 0;
+    background-color: white;
+    width: 270px;
+    height: 384px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.171);
+}
+
+
+
+/* -----------Product Deatials------------- */
+
+.PC_productDetails{
+    position: absolute;
+    z-index: 4;
+    margin: 24px 24px 0px 24px;
+    color: #707070;
+}
+.PC_price{
+    width: 222px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.PC_txtHead{
+    font-family: Righteous;
+    font-size: 16px;
+}
+
+.PC_txtSubHead{
+    color: #F63F17;
+    font-family: Oswald;
+    font-size: 12px;
+}
+
+
+
+/* --------------Buttons---------------------- */
+.PC_productBttons{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    margin: 332px 0px 24px 24px;
+}
+
+.PC_btnCartAdd{
+    /* margin-top: 48px; */
+    fill: #F63F17;
+    z-index: 5;
+    
+}
+.PC_btnFavoriteAdd{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+
+#PC_outline{
+    fill: white;
+}
+
+
+/* ----------------Hover effects----------------------*/
+
+.PC_box:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+.PC_box:hover .PC_productImagesLayer3{
+    opacity: 1;
+    transition: 0.3s;
+}
+.PC_box:hover .PC_productImagesLayer2{
+  margin-right: 0;
+  opacity: 1;
+  margin-left: 12px;
+  transition: 1s;
+}
+
+.PC_box:hover .PC_productDetails{
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.PC_box:hover .PC_txtSubHead{
+    color: white;
+}
+
+.PC_box:hover .PC_productImagesLayer1{
+    transform: scale(1.01);
+    transition: all ease 0.5s;
+}
+
+.PC_btnCartAdd:hover{
+    transform: scale(1.3);
+}
+.PC_btnFavoriteAdd:hover{
+    transform: scale(1.3);
+}
+.PC_box:hover .PC_btnCartAdd{
+    fill: white;
+    transition: all ease 0.1s;   
+}
+
+.PC_box:hover .PC_btnFavoriteAdd{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+
+.PC_box:hover #PC_outline{
+    fill: white;
+    transition:  0.5s;
+}
+
+.PC_btnCartAdd:active{
+    transform: scale(1.2);
+}
+
+.PC_btnFavoriteAdd:active{
+    fill: white;
+    transform: scale(1.2);
+}
+
+.PC_btnFavoriteAdd:active #PC_favorite{
+    fill: white;
+}
+
+.PC_btnFavoriteAdd:active #PC_favoriteA{
+    fill: white;
+}
+
+
+.PC_box:after{
+    transition: all 0.3s ease 0s; 
+}
+
+.PC_box:after .PC_productImagesLayer2{
+    opacity: 1;
+    transition: all 0.3s ease 0s; 
+}
+
+
+
+.PC_btnOutline_add{
+    fill:white;
+}
+
+.PC_btnFull_add:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_add {
+    fill: white;
+}
+.PC_btnFull_add {
+    fill: #F63F17;
+}
+
+
+
+/* ---------product 001-------------------------------------------- */
+
+.PC_btnFavoriteAddA{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddA{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addA{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addA{
+    fill:white;
+}
+
+.PC_btnFull_addA:hover {
+    fill: white;
+}
+.PC_box:hover .btnFull_addA {
+    fill: white;
+}
+.PC_btnFull_addA {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addA{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* ---------product 001-------------------------------------------- */
+
+.PC_btnFavoriteAddP001{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP001{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP001{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP001{
+    fill:white;
+}
+
+.PC_btnFull_addP001:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP001 {
+    fill: white;
+}
+.PC_btnFull_addP001 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP001{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* ---------product 002-------------------------------------------- */
+
+.PC_btnFavoriteAddP002{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP002{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP002{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP002{
+    fill:white;
+}
+
+.PC_btnFull_addP002:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP002 {
+    fill: white;
+}
+.PC_btnFull_addP002 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP002{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* ---------product 003-------------------------------------------- */
+
+.PC_btnFavoriteAddP003{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP003{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP003{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP003{
+    fill:white;
+}
+
+.PC_btnFull_addP003:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP003 {
+    fill: white;
+}
+.PC_btnFull_addP003 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP003{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* ---------product 004-------------------------------------------- */
+
+.PC_btnFavoriteAddP004{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP004{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP004{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP004{
+    fill:white;
+}
+
+.PC_btnFull_addP004:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP004 {
+    fill: white;
+}
+.PC_btnFull_addP004 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP004{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* --------------------next list--------------------------- */
+
+
+
+
+/* ---------product 005-------------------------------------------- */
+
+.PC_btnFavoriteAddP005{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP005{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP005{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP005{
+    fill:white;
+}
+
+.PC_btnFull_addP005:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP005 {
+    fill: white;
+}
+.PC_btnFull_addP005 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP005{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* ---------product 006-------------------------------------------- */
+
+.PC_btnFavoriteAddP006{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP006{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP006{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP006{
+    fill:white;
+}
+
+.PC_btnFull_addP006:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP006 {
+    fill: white;
+}
+.PC_btnFull_addP006 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP006{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* ---------product 007-------------------------------------------- */
+
+.PC_btnFavoriteAddP007{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP007{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP007{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP007{
+    fill:white;
+}
+
+.PC_btnFull_addP007:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP007 {
+    fill: white;
+}
+.PC_btnFull_addP007 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP007{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* ---------product 008-------------------------------------------- */
+
+.PC_btnFavoriteAddP008{
+    fill: transparent;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.PC_box:hover .PC_btnFavoriteAddP008{
+    transition: all ease 0.5s;
+    margin-top: -48px;
+}
+
+.PC_btnMain_addP008{
+    margin-top: -48px;
+}
+
+.PC_btnOutline_addP008{
+    fill:white;
+}
+
+.PC_btnFull_addP008:hover {
+    fill: white;
+}
+.PC_box:hover .PC_btnFull_addP008 {
+    fill: white;
+}
+.PC_btnFull_addP008 {
+    fill: #F63F17;
+}
+
+.PC_btnMain_addP008{
+    margin-top: -48px;
+}
+
+
+/* ----------------------------------------------------------- */
